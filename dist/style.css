@@ -1,0 +1,46 @@
+.dashboard-container {
+  background-color: coral;
+  height: 100vh;
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+}
+.bucket {
+  background-color: red;
+  min-width: 240px;
+  max-width: 240px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid black;
+}
+.cards {
+  background-color: bisque;
+  padding: 4px;
+  flex-grow: 1;
+}
+.card{
+  border-bottom: 4px;
+  margin-bottom: 8px;
+  padding: 4px;
+  background-color: rgba(165, 241, 149, 0.637);
+  height: 10px;
+  cursor: grab;
+}
+.card {
+  cursor: grabbing;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.card:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+h1{
+  color: brown;
+}
